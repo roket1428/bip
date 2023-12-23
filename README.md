@@ -1,0 +1,1 @@
+# Bilgi işleme projesi (BIP)
