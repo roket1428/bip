@@ -1,38 +1,37 @@
 import re
 from datetime import datetime
-from poppler import load_from_file
+from poppler import load_from_data
 
-"""
-Karne data structure:
-
-{
-    "university": university,
-    "major": major,
-    "student_id": student_id,
-    "name": name,
-    "surname": surname,
-    "signup_date": signup_date,
-    "print_date": print_date,
-    "terms": [[{ 
-                "lecture_code": lecture_code[j],
-                "lecture_name": lecture_name[j],
-                "date_taken": date_taken[j],
-                "semester_taken": semester_taken[j],
-                "credit": credit[j],
-                "grade_letter": grade_letter[j],
-                "grade_multiplier": grade_multiplier[j],
-                "points": points[j]
-            },
+class KarneData():
+    """
+    Karne data structure:
+    {
+        "university": university,
+        "major": major,
+        "student_id": student_id,
+        "name": name,
+        "surname": surname,
+        "signup_date": signup_date,
+        "print_date": print_date,
+        "terms": [[{ 
+                    "lecture_code": lecture_code[j],
+                    "lecture_name": lecture_name[j],
+                    "date_taken": date_taken[j],
+                    "semester_taken": semester_taken[j],
+                    "credit": credit[j],
+                    "grade_letter": grade_letter[j],
+                    "grade_multiplier": grade_multiplier[j],
+                    "points": points[j]
+                },
+                ...
+            ],
             ...
-        ],
-        ...
-    ]
-}
-"""
-
-class LoadKarne:
-    def __init__(self, pdf_path):
-        self.pdf = load_from_file(pdf_path)
+        ]
+        "grad_date": grad_date
+    }
+    """
+    def __init__(self, file_data):
+        self.pdf = load_from_data(file_data)
         self.page_1 = self.pdf.create_page(0)
         self.page_2 = self.pdf.create_page(1)
 
@@ -71,12 +70,10 @@ class LoadKarne:
             "signup_date": signup_date,
             "print_date": print_date
         }
-        
 
         semester_array = []
         for i in range(8):
             lectures = re.findall(f'(?s)Dönemi : {i+1}\n(.*?)\nDönemi : {i+2}', pg_txt)[0]
-
             lecture_code = re.findall('^[\S]{3} ?[0-9]{3}', lectures, re.M)
             lecture_name = re.findall('(?:(?<=[\S]{3} [0-9]{3} )|(?<=[\S]{3}[0-9]{3} )).*(?= [0-9]{4})', lectures)
             date_taken = re.findall('[0-9]{4}-[0-9]{4}', lectures)
