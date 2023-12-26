@@ -1,0 +1,101 @@
+:root, [data-bs-theme="light"] {
+    --primary: #2C56D1;
+    --on-primary: #FFFFFF;
+    --primary-container: #ACBBE6;
+    --on-primary-container: #0B1533;
+    --secondary: #D6A944;
+    --on-secondary: #FFFFFF;
+    --secondary-container: #E6D6B4;
+    --on-secondary-container: #332810;
+    --tertiary: #0F1E49;
+    --on-tertiary: #FFFFFF;
+    --tertiary-container: #ACBBE6;
+    --on-tertiary-container: #0B1533;
+    --error: #B3261E;
+    --on-error: #FFFFFF;
+    --error-container: #E6ACA9;
+    --on-error-container: #330B09;
+    --background: #fbfcfc;
+    --on-background: #313133;
+    --surface: #fbfcfc;
+    --on-surface: #313133;
+    --surface-variant: #dadde6;
+    --on-surface-variant: #565a66;
+    --outline: #818799;
+}
+
+[data-bs-theme="dark"] {
+    --primary: #94A9E6;
+    --on-primary: #101F4C;
+    --primary-container: #152A66;
+    --on-primary-container: #ACBBE6;
+    --secondary: #E6D0A0;
+    --on-secondary: #4C3C18;
+    --secondary-container: #665121;
+    --on-secondary-container: #E6D6B4;
+    --tertiary: #94A9E6;
+    --on-tertiary: #101F4C;
+    --tertiary-container: #152A66;
+    --on-tertiary-container: #ACBBE6;
+    --error: #E69490;
+    --on-error: #4C100D;
+    --error-container: #661511;
+    --on-error-container: #E6ACA9;
+    --background: #313133;
+    --on-background: #e3e3e6;
+    --surface: #313133;
+    --on-surface: #e3e3e6;
+    --surface-variant: #565a66;
+    --on-surface-variant: #d5d9e6;
+    --outline: #a1a5b3;
+}
+
+body {
+    color: var(--on-background) !important;
+    background-color: var(--background) !important;
+    height: 100vh;
+}
+
+.bg-navbar {
+    color: var(--on-primary-container) !important;
+    background-color: var(--primary-container) !important;
+}
+
+.btn-menu {
+    color: var(--on-primary-container) !important;
+    background-color: var(--primary-container) !important;
+    width: 70px;
+    border-style: none !important;
+}
+
+.btn-menu:hover {
+    background-color: var(--surface-variant) !important;
+}
+[data-bs-theme="dark"] .btn-menu:hover {
+    background-color: var(--on-tertiary) !important;
+}
+
+.fileupload-area {
+    color: var(--on-surface-variant) !important;
+    background-color: var(--surface-variant) !important;
+    border-style: dashed;
+    border-color: var(--outline) !important;
+    width: 80%;
+    height: 250px;
+    padding: 25px;
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1399.98px) {
+    .fileupload-area {
+        width: 100% !important;
+    }
+}
+
+.fileupload-container {
+    justify-content: center;
+}
