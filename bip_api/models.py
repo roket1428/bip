@@ -10,7 +10,11 @@ class Karne(models.Model):
     signup_date = models.DateField()
     print_date = models.DateField()
     terms = models.JSONField()
-    grad_date = models.DateField()
+    grad_year = models.CharField(max_length=4)
 
     def __str__(self):
         return self.name
+
+# data index model
+class YearIndex(models.Model):
+    year = models.CharField(max_length=4)

@@ -2,7 +2,7 @@ import re
 from datetime import datetime
 from poppler import load_from_data
 
-class KarneData():
+class KarneParser():
     """
     Karne data structure:
     {
@@ -71,7 +71,7 @@ class KarneData():
             "print_date": print_date
         }
 
-        semester_array = []
+        semester_array = [None] * 8
         for i in range(8):
             lectures = re.findall(f'(?s)Dönemi : {i+1}\n(.*?)\nDönemi : {i+2}', pg_txt)[0]
             lecture_code = re.findall('^[\S]{3} ?[0-9]{3}', lectures, re.M)

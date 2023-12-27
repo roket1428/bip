@@ -23,5 +23,7 @@ router = DefaultRouter()
 router.register('upload', views.handlePdfUpload, basename='file')
 urlpatterns = [
     path('admin/', admin.site.urls),
-    re_path(r'^api/', include(router.urls)), 
+    re_path(r'^api/', include(router.urls)),
+    re_path(r'^api/query$', views.handleFileDataQueries),
+    re_path(r'^api/indexes$', views.handleYearIndexQuery),
 ]

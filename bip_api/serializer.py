@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Karne
+from .models import Karne, YearIndex
 
 class KarneSerializer(serializers.ModelSerializer):
     class Meta:
@@ -13,9 +13,14 @@ class KarneSerializer(serializers.ModelSerializer):
             'surname',
             'signup_date',
             'print_date',
-            'terms'
-            'grad_date'
+            'terms',
+            'grad_year',
         ]
-        
+
+class YearIndexSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = YearIndex
+        fields = ['id', 'year',]
+ 
 class PdfFileSerializer(serializers.Serializer):
     file = serializers.FileField(max_length=None, allow_empty_file=False)
