@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Karne, YearIndex
+from .models import Karne, Terms, YearIndex
 
 class KarneSerializer(serializers.ModelSerializer):
     class Meta:
@@ -13,9 +13,15 @@ class KarneSerializer(serializers.ModelSerializer):
             'surname',
             'signup_date',
             'print_date',
-            'terms',
+            'gno',
+            'credits_sum',
+            'points_sum',
             'grad_year',
         ]
+class TermsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Terms
+        fields = ['id', 'terms',]
 
 class YearIndexSerializer(serializers.ModelSerializer):
     class Meta:

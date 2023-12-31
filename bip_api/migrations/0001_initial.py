@@ -22,8 +22,10 @@ class Migration(migrations.Migration):
                 ('surname', models.CharField(max_length=50)),
                 ('signup_date', models.DateField()),
                 ('print_date', models.DateField()),
-                ('terms', models.JSONField()),
-                ('grad_year', models.CharField(max_length=4)),
+                ('gno', models.CharField(max_length=10)),
+                ('credits_sum', models.CharField(max_length=10)),
+                ('points_sum', models.CharField(max_length=10)),
+                ('grad_year', models.IntegerField()),
             ],
         ),
     ]

@@ -13,6 +13,9 @@ class KarneParser():
         "surname": surname,
         "signup_date": signup_date,
         "print_date": print_date,
+        "gno": gno,
+        "credit_sum": credit_sum,
+        "points_sum": points_sum,
         "terms": [[{ 
                     "lecture_code": lecture_code[j],
                     "lecture_name": lecture_name[j],
@@ -60,6 +63,9 @@ class KarneParser():
         print_date = datetime.strptime(
             re.findall('Basım Tarihi : [0-9]{2}\.[0-9]{2}\.[0-9]{4}', pg_txt)[0].split(' : ')[1],
             '%d.%m.%Y').date()
+        gno = re.findall(r'(?<=Genel Not Ortalaması )[0-9],[0-9]{2}', pg_txt)[0]
+        credits_sum = re.findall(r'(?<=Genel Toplam )[0-9]{3},[0-9]', pg_txt)[0]
+        points_sum = re.findall(r'(?<=Genel Toplam [0-9]{3},[0-9] )[0-9]{3},[0-9]{2}', pg_txt)[0]
 
         output = {
             "university": university,
@@ -68,7 +74,10 @@ class KarneParser():
             "name": name,
             "surname": surname,
             "signup_date": signup_date,
-            "print_date": print_date
+            "print_date": print_date,
+            "gno": gno,
+            "credits_sum": credits_sum,
+            "points_sum": points_sum
         }
 
         semester_array = [None] * 8
@@ -78,7 +87,7 @@ class KarneParser():
             lecture_name = re.findall('(?:(?<=[\S]{3} [0-9]{3} )|(?<=[\S]{3}[0-9]{3} )).*(?= [0-9]{4})', lectures)
             date_taken = re.findall('[0-9]{4}-[0-9]{4}', lectures)
             semester_taken = re.findall('\([0-9]\-[\S]{3,5}\)', lectures)
-            credit = re.findall('[0-9],0(?:(?= [A-F]{2})|(?= BL))', lectures)
+            credits = re.findall('[0-9],0(?:(?= [A-F]{2})|(?= BL))', lectures)
             grade_letter = [x.strip(' ') for x in re.findall(' [A-F]{2} | BL ', lectures)]
             grade_multiplier = re.findall('[0-9]\.[0-9]{2}', lectures)
             points = re.findall('[0-9]{1,2},[0-9]{2}$', lectures, re.M)
@@ -89,7 +98,7 @@ class KarneParser():
                                     "lecture_name": lecture_name[j],
                                     "date_taken": date_taken[j],
                                     "semester_taken": semester_taken[j],
-                                    "credit": credit[j],
+                                    "credits": credits[j],
                                     "grade_letter": grade_letter[j],
                                     "grade_multiplier": grade_multiplier[j],
                                     "points": points[j]
