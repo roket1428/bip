@@ -1,12 +1,25 @@
+import axios from "axios";
 import React, { useCallback } from "react";
 import { useDropzone } from "react-dropzone";
 
 // TODO: implement sending files to the api endpoint using axios.
-function FileUpload() {
-    const onDrop = useCallback(acceptedFiles => {
-        //const formData = new FormData();
-        console.log("test");
-    }, []);
+function FileUpload({ setFileUploaded, currentPage, refetch }) {
+    const onDrop = useCallback(async (acceptedFiles) => {
+        const formData = new FormData();
+        formData.append('year', currentPage);
+        acceptedFiles.forEach(file => {
+           formData.append('file', file);
+        });
+        await axios.post('upload/', formData)
+            .then(() => {
+                refetch();
+                setFileUploaded(true);
+            })
+            .catch((error) => {
+                console.error(error);
+            })
+    }, [setFileUploaded, currentPage, refetch]);
+
     const { getRootProps, getInputProps, IsDragActive } = useDropzone({ onDrop })
 
     return (
