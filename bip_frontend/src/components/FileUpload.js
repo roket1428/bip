@@ -1,14 +1,14 @@
 import axios from "axios";
 import React, { useCallback } from "react";
 import { useDropzone } from "react-dropzone";
+import { Dropdown } from "react-bootstrap";
 
-// TODO: implement sending files to the api endpoint using axios.
-function FileUpload({ setFileUploaded, currentPage, refetch }) {
+function FileUpload({ setFileUploaded, currentPage, refetch, isMenu }) {
     const onDrop = useCallback(async (acceptedFiles) => {
         const formData = new FormData();
         formData.append('year', currentPage);
         acceptedFiles.forEach(file => {
-           formData.append('file', file);
+            formData.append('file', file);
         });
         await axios.post('upload/', formData)
             .then(() => {
@@ -22,7 +22,12 @@ function FileUpload({ setFileUploaded, currentPage, refetch }) {
 
     const { getRootProps, getInputProps, IsDragActive } = useDropzone({ onDrop })
 
-    return (
+    return (isMenu ?
+        <Dropdown.Item {...getRootProps()}>
+            <input {...getInputProps()} />
+            Öğrenci Ekle
+        </Dropdown.Item>
+        :
         <div className="fileupload-area rounded-4 shadow-sm" {...getRootProps()}>
             <input {...getInputProps()} />
             <i className="bi bi-file-earmark-arrow-up-fill fs-1"></i>
