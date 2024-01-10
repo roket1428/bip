@@ -27,4 +27,5 @@ urlpatterns = [
     re_path(r'^api/query$', views.handleStudentListQuery),
     re_path(r'^api/terms$', views.handleTermQuery),
     re_path(r'^api/indexes$', views.handleYearIndexQuery),
+    re_path(r'^api/delete$', views.handleRemoveRequests),
 ]

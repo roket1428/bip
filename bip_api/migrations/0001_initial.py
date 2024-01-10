@@ -26,6 +26,7 @@ class Migration(migrations.Migration):
                 ('credits_sum', models.CharField(max_length=10)),
                 ('points_sum', models.CharField(max_length=10)),
                 ('grad_year', models.IntegerField()),
+                ('grad_status', models.JSONField()),
             ],
         ),
     ]

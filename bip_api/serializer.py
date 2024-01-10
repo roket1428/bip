@@ -17,11 +17,12 @@ class KarneSerializer(serializers.ModelSerializer):
             'credits_sum',
             'points_sum',
             'grad_year',
+            'grad_status',
         ]
 class TermsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Terms
-        fields = ['id', 'terms',]
+        fields = [ 'terms',]
 
 class YearIndexSerializer(serializers.ModelSerializer):
     class Meta:

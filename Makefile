@@ -1,6 +1,6 @@
 .PHONY: venv tests
 venv:
-	python -m venv --system-site-packages venv
+	python -m venv venv
 
 deps: venv
 	. ./venv/bin/activate && pip install -r requirements.txt

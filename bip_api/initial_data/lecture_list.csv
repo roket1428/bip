@@ -1,0 +1,133 @@
+term,lecture_code,lecture_name,t,u,k,akts
+1YY,BST101,İktisada Giriş,3,0,3,6
+1YY,BST103,Algoritma Bilgisayar Programla. Giriş,3,2,4,6
+1YY,BST105,Bilgisayara Giriş,2,1,2.5,6
+1YY,BST107,Matematik - I,3,0,3,6
+1YY,ZYD101,Yabancı Dil - I,2,0,2,2
+1YY,ZAI101,Atatürk İlkeleri ve İnkılâp Tar. I,2,0,2,2
+1YY,ZTD101,Türk Dili - I,2,0,2,2
+2YY,BST102,Genel İşletme,3,0,3,6
+2YY,BST104,Bilgisayar Programlama,3,2,4,6
+2YY,BST106,Finansal Okur-Yazarlık,3,0,3,6
+2YY,BST108,Matematik - II,3,0,3,6
+2YY,ZYD102,Yabancı Dil - II,2,0,2,2
+2YY,ZAI102,Atatürk İlkeleri ve İnkılâp Tar. II,2,0,2,2
+2YY,ZTD102,Türk Dili II,2,0,2,2
+3YY,BST201,Veri Yapıları,2,2,3,4
+3YY,BST203,Sayısal Devre Tasarımı,3,2,4,5
+3YY,BST205,İstatistik,2,1,2.5,3
+3YY,BST207,Python Programlama,3,2,4,5
+3YY,BST209,Nesne Tabanlı Programlama,3,2,4,5
+3YY,ING021,İngilizce I,4,0,4,4
+3YY,BST221,Sanallaştırma Ve Bulut Hesaplama,3,0,3,4
+4YY,BST202,Prog. Dil. Uygulamaları,3,2,4,5
+4YY,BST204,Bilişmde Veri Güvenliği,2,2,3,5
+4YY,BST206,Bilgisayar Mimarisi,3,0,3,5
+4YY,ING022,İngilizce II,4,0,4,4
+4YY,BST208,Linux Sistemleri Yönetimi,3,0,3,4
+4YY,BST230,Kriptografi,3,0,3,4
+4YY,BST212,Proje Yönetimi,3,0,3,3
+5YY,BST301,Görsel Programlama I,3,2,4,4
+5YY,BST303,Yazılım Mühendisliği,2,2,3,4
+5YY,BST305,İşletim Sistemleri,3,2,4,4
+5YY,BST307,İnternet Programlama,3,2,4,4
+5YY,ING031,İngilizce III,4,0,4,4
+5YY,XXX000,Seçimlik Ders I,3,0,3,4
+5YY,XXX000,Seçimlik Ders II,3,0,3,4
+5YY,XXX111,Seçimlik Ders III (Üniversite),2,0,2,3
+6YY,BST302,Görsel Programlama II,3,2,4,4
+6YY,BST304,Veritabanı Yönetim Sistemleri,3,2,4,4
+6YY,BST306,Bilgisayar Ağlarına Giriş,3,0,3,3
+6YY,BST308,Mikroişlemciler,3,2,4,4
+6YY,ING032,İngilizce IV,4,0,4,4
+6YY,XXX000,Seçimlik Ders I,3,0,3,4
+6YY,XXX000,Seçimlik Ders II,3,0,3,4
+6YY,XXX111,Seçimlik Ders III (Üniversite),2,0,2,3
+7YY,BST401,Bitirme Projesi I,0,6,3,6
+7YY,BST403,Veritabanı Yönetim Sistemleri,3,2,4,4
+7YY,BST405,Bilgisayar Ağ Yönetimi,2,2,3,4
+7YY,BST407,Mesleki İngilizce I,4,0,4,4
+7YY,XXX000,Seçimlik Ders I,3,0,3,4
+7YY,XXX000,Seçimlik Ders II,3,0,3,4
+7YY,XXX111,Seçimlik Ders III (Üniversite),2,0,2,3
+8YY,BST402,Bitirme Projesi - II,0,6,3,6
+8YY,BST404,Sistem Programlama,3,2,3,4
+8YY,BST406,Mesleki İngilizce II,4,0,4,4
+8YY,XXX000,Seçimlik Ders I,3,0,3,4
+8YY,XXX000,Seçimlik Ders II,3,0,3,4
+8YY,XXX000,Seçimlik Ders III,3,0,3,4
+8YY,XXX111,Seçimlik Ders IV (Üniversite),2,0,2,3
+5YYSD,BST321,İnsan Kaynakları Yönetimi,3,0,3,4
+5YYSD,BST323,Liderlik,3,0,3,4
+5YYSD,BST325,Araştırma Yöntemleri,3,0,3,4
+5YYSD,BST337,Halkla İlişkiler,3,0,3,4
+5YYSD,BST327,Tüketici ve Üretici Davranışları,3,0,3,4
+5YYSD,BST329,Yönetim Muhasebesi,3,0,3,4
+5YYSD,BST399,Kamu Maliyesi ve Devlet Bütçesi,3,0,3,4
+5YYSD,BST331,İşletme Enformatik Sistemleri,3,0,3,4
+5YYSD,BST333,Inovasyon,3,0,3,4
+5YYSD,BST335,Doğal Dil İşleme,3,0,3,4
+5YYAD,KYC501,Psikoloji,2,0,2,3
+5YYAD,KYC503,Bilişim Etiği,2,0,2,3
+5YYAD,KYC505,İletişim Becerileri,2,0,2,3
+5YYAD,KYC507,Müzakere Yöntemleri,2,0,2,3
+5YYAD,KYC509,Turizm İşletmeciliği ve Gastronomi,2,0,2,3
+5YYAD,KYC511,Uluslararası Dağıtım Kanalları,2,0,2,3
+5YYAD,KYC513,Almanca I,2,0,2,3
+5YYAD,KYC515,Ekonometri,2,0,2,3
+5YYAD,KYC517,Dijital Dünya ve İnovasyon,2,0,2,3
+6YYSD,BST326,E-Ticaret,3,0,3,4
+6YYSD,BST328,Girişimcilik ve İş Tasarımı,3,0,3,4
+6YYSD,BST330,Hizmet Pazarlaması,3,0,3,4
+6YYSD,BST332,Yönetim Psikolojisi,3,0,3,4
+6YYSD,BST334,İşletme Finansı,3,0,3,4
+6YYSD,BST336,Karar Verme Teknikleri,3,0,3,4
+6YYSD,BST392,Vergi Hukuku,3,0,3,4
+6YYSD,BST320,Sosyal Ağ ve Büyük Veri Analizleri,3,0,3,4
+6YYSD,BST322,Yapay Sinir Ağları,3,0,3,4
+6YYSD,BST324,Automata,3,0,3,4
+6YYAD,KYC600,Sosyoloji,2,0,2,3
+6YYAD,KYC602,Problem Çözme Teknikleri,2,0,2,3
+6YYAD,KYC604,Bilim Tarihi,2,0,2,3
+6YYAD,KYC606,Uluslararası Ekonomi Hukuku,2,0,2,3
+6YYAD,KYC608,Operasyon Analizi ve Planlama,2,0,2,3
+6YYAD,KYC610,Meslek Etiği,2,0,2,3
+6YYAD,KYC612,Tarım Ekonomisi,2,0,2,3
+6YYAD,KYC614,Alternatif Turizm,2,0,2,3
+6YYAD,KYC616,Almanca II,2,0,2,3
+7YYSD,BST421,İletişim Teknikleri,3,0,3,4
+7YYSD,BST499,Türk Vergi Sistemi,3,0,3,4
+7YYSD,BST425,Kamu Ekonomisi,3,0,3,4
+7YYSD,BST427,Yerel Yönetimler,3,0,3,4
+7YYSD,BST421,Yapay Zekâ Programlama,3,0,3,4
+7YYSD,BST423,Mobil Uygulama Geliştirme I,3,0,3,4
+7YYSD,BST425,Gömülü Sistemler,3,0,3,4
+7YYSD,BST427,Bulanık Mantık,3,0,3,4
+7YYSD,BST429,Veri Madenciliği,3,0,3,4
+7YYSD,BST431,Bilgisayar Grafikleri,3,0,3,4
+7YYAD,KYC701,Uluslararası İlişkiler,2,0,2,3
+7YYAD,KYC703,Bilgi Sistemleri Analizi,2,0,2,3
+7YYAD,KYC705,Resmi Yazışmalar ve Rapor Yazma,2,0,2,3
+7YYAD,KYC707,Oyunlarla Operasyon Yönetimi,2,0,2,3
+7YYAD,KYC709,Gıda ve Turizm İşletmeleri Yönetimi,2,0,2,3
+7YYAD,KYC711,İktisat Sosyolojisi,2,0,2,3
+7YYAD,KYC713,Almanca III,2,0,2,3
+7YYAD,KYC715,Sosyal CRM,2,0,2,3
+8YYSD,BST420,Stratejik Yönetim,3,0,3,4
+8YYSD,BST422,Uluslararası Maliye,3,0,3,4
+8YYSD,BST498,Mali Yargı,2,2,3,4
+8YYSD,BST424,Uluslararası Vergi Rekabeti,2,2,3,4
+8YYSD,BST426,Mobil Uygulama Geliştirme II,2,2,3,4
+8YYSD,BST428,Sızma Testleri Ve Etik Hackleme,3,0,3,4
+8YYSD,BST430,İş Süreçleri Yönetimi,3,0,3,4
+8YYSD,BST432,Yönetim ve Organizasyon,3,0,3,4
+8YYSD,BST434,Robotik Bilim,3,0,3,4
+8YYSD,BST436,Sistem Analizi,3,0,3,4
+8YYAD,KYC800,Kriz Yönetimi,2,0,2,3
+8YYAD,KYC802,Çağdaş Yönetim Teknikleri,2,0,2,3
+8YYAD,KYC804,Turizm Politikası ve Planlaması,2,0,2,3
+8YYAD,KYC806,Örgüt ve Yönetim Geliştirme,2,0,2,3
+8YYAD,KYC808,İktisadi Düşünceler Tarihi,2,0,2,3
+8YYAD,KYC810,Almanca IV,2,0,2,3
+8YYAD,KYC812,Uluslararası Ticaret Hukuku,2,0,2,3
+8YYAD,KYC820,Karar Destek Sistemleri,2,0,2,3
