@@ -25,7 +25,7 @@ function FileUpload({ setFileUploaded, currentPage, refetch, isMenu }) {
     return (isMenu ?
         <Dropdown.Item {...getRootProps()}>
             <input {...getInputProps()} />
-            Öğrenci Ekle
+            <i class="bi bi-plus-square"></i>{" "}Öğrenci Ekle
         </Dropdown.Item>
         :
         <div className="fileupload-area rounded-4 shadow-sm" {...getRootProps()}>

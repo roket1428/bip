@@ -4,15 +4,13 @@ import 'bootstrap/dist/css/bootstrap-reboot.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.min.css';
 import { Container, Stack } from 'react-bootstrap';
 import { Navbar } from 'react-bootstrap';
-import PageContent from './components/PageContent';
-import ThemeSwitcher from './components/ThemeSwitcher';
-
+import PageContainer from './components/PageContainer';
 
 function App({ queryClient }) {
     return (
         <Stack>
             <Navbar className="bg-navbar shadow-sm">
-                <Container className='justify-content-center custom-container'>
+                <Container className='justify-content-center'>
                     <Navbar.Brand>
                         <img
                             alt="BIP logo"
@@ -24,9 +22,8 @@ function App({ queryClient }) {
                         Bilgi İşleme Projesi
                     </Navbar.Brand>
                 </Container>
-                <ThemeSwitcher />
             </Navbar>
-            <PageContent queryClient={queryClient} />
+            <PageContainer queryClient={queryClient} />
             <div className='d-flex justify-content-center'>
                 <h4 className='version-info'>BIP - Prototype version - KarneParser (Legacy)</h4>
             </div>
